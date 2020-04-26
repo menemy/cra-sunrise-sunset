@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:prettier/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "warn"
+    ],
+    // Disable <Fragment> => <> replacement. Feel free to change
+    "react/jsx-fragments": "off",
+    // Disable prefer default export
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+.app {
+  text-align: center;
+}
+.bar {
+  margin: 10px auto;
+  height: 50px;
+}
+.header {
+  font-size: 18px;
+  font-weight: 800;
+}
+.pre {
+  background-color: #dddddd;
+  margin: 150px 30px 150px 30px;
+  padding: 20px 0;
+  min-height: 500px;
+  border-radius: 10px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.button {
+  background-color: #1f0e4e;
+  color: #ced6d4;
+  font-size: 15px;
+  padding: 7px;
+  margin: 2px;
+}

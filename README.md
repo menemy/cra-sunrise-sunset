@@ -19,4 +19,4 @@ Application, which retrieving async data and graphically displaying it.
 <img src="./examples/web.png" width="600">
 
 ### 5 Demo
-https://menemy.github.io/cra-sunrise-sunset
+https://menemy.github.io/cra-sunrise-sunset/

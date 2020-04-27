@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cra-sunrise-sunset/static/css/main.2456ad2d.chunk.css",
+    "main.js": "/cra-sunrise-sunset/static/js/main.53396613.chunk.js",
+    "main.js.map": "/cra-sunrise-sunset/static/js/main.53396613.chunk.js.map",
+    "runtime-main.js": "/cra-sunrise-sunset/static/js/runtime-main.2afc54f2.js",
+    "runtime-main.js.map": "/cra-sunrise-sunset/static/js/runtime-main.2afc54f2.js.map",
+    "static/js/2.98dd1fa6.chunk.js": "/cra-sunrise-sunset/static/js/2.98dd1fa6.chunk.js",
+    "static/js/2.98dd1fa6.chunk.js.map": "/cra-sunrise-sunset/static/js/2.98dd1fa6.chunk.js.map",
+    "index.html": "/cra-sunrise-sunset/index.html",
+    "precache-manifest.539fac3d0036f6ef7702923b181ae21f.js": "/cra-sunrise-sunset/precache-manifest.539fac3d0036f6ef7702923b181ae21f.js",
+    "service-worker.js": "/cra-sunrise-sunset/service-worker.js",
+    "static/css/main.2456ad2d.chunk.css.map": "/cra-sunrise-sunset/static/css/main.2456ad2d.chunk.css.map",
+    "static/js/2.98dd1fa6.chunk.js.LICENSE.txt": "/cra-sunrise-sunset/static/js/2.98dd1fa6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2afc54f2.js",
+    "static/js/2.98dd1fa6.chunk.js",
+    "static/css/main.2456ad2d.chunk.css",
+    "static/js/main.53396613.chunk.js"
+  ]
+}

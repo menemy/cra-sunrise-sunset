@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26283649a131837e5b78f53c70603707",
+    "revision": "799c47b33f0f210e8cf943af0251e036",
     "url": "/cra-sunrise-sunset/index.html"
   },
   {

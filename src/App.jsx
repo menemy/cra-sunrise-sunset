@@ -19,7 +19,8 @@ const formatInterval = (seconds) => {
   if (!seconds) return ''
   const hours = Math.floor(seconds / 3600)
   const minutes = Math.floor((seconds % 3600) / 60)
-  return `${hours}:${minutes}`
+  const minuteFormatted = minutes < 10 ? `0${minutes}` : minutes
+  return `${hours}:${minuteFormatted}`
 }
 const formatTime = (dateString) => {
   if (!dateString) return ''

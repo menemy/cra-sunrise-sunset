@@ -68,7 +68,7 @@ function App() {
   return (
     <div className={styles.app}>
       {error ? (
-        <h1 className={styles.error}>{error}</h1>
+        <h3 className={styles.error}>{error}</h3>
       ) : (
         <div className={styles.pre}>
           <div>

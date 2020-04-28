@@ -5,6 +5,9 @@
   margin: 10px auto;
   height: 50px;
 }
+.error {
+  color: #ffffff;
+}
 .header {
   font-size: 18px;
   font-weight: 800;
@@ -24,4 +27,8 @@
   font-size: 15px;
   padding: 7px;
   margin: 2px;
+}
+.button:disabled {
+  color: darkgray;
+  background-color: #4c465c;
 }

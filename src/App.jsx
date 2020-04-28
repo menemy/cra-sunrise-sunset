@@ -45,7 +45,11 @@ function App() {
             setError(status)
           }
         } catch (exception) {
-          setError(exception.message)
+          if (exception.toString() === '[object GeolocationPositionError]') {
+            setError(`GeolocationPositionError, code=${ exception.code}`)
+          } else {
+            setError(exception.message)
+          }
         } finally {
           setIsLoading(false)
         }
@@ -64,7 +68,7 @@ function App() {
   return (
     <div className={styles.app}>
       {error ? (
-        <div>{error}</div>
+        <h1 className={styles.error}>{error}</h1>
       ) : (
         <div className={styles.pre}>
           <div>
@@ -78,6 +82,7 @@ function App() {
               <br />
             </p>
             <button
+              disabled={!!isLoading}
               type="button"
               className={styles.button}
               onClick={() => setDays((currDays) => currDays - 7)}
@@ -85,6 +90,7 @@ function App() {
               -7 days
             </button>
             <button
+              disabled={!!isLoading}
               type="button"
               className={styles.button}
               onClick={() => setDays((currDays) => currDays - 1)}
@@ -92,6 +98,7 @@ function App() {
               -1 day
             </button>
             <button
+              disabled={!!isLoading}
               type="button"
               className={styles.button}
               onClick={() => setDays((currDays) => currDays + 1)}
@@ -99,6 +106,7 @@ function App() {
               +1 day
             </button>
             <button
+              disabled={!!isLoading}
               type="button"
               className={styles.button}
               onClick={() => setDays((currDays) => currDays + 7)}

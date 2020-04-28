@@ -60,15 +60,21 @@ export function Bar({ data, prevData, animateMs }) {
     return () => cancelAnimationFrame(requestRef.current)
   }, [data, prevData])
 
+  // Scale for mobile
+  const scale = Math.min((window.screen.width - 60) / 1440, 1)
   return (
     /* eslint-disable camelcase */
     <div
       className={styles.bar}
       style={{
-        width: 1440,
+        width: scale * 1440,
         background:
-          `linear-gradient(90deg, #1F0E4E ${civil_twilight_begin_minutes}px,` +
-          ` #00D0F0 ${sunrise_minutes}px,#00D0F0 ${sunset_minutes}px, #1F0E4E ${civil_twilight_end_minutes}px)`,
+          `linear-gradient(90deg, #1F0E4E ${
+            scale * civil_twilight_begin_minutes
+          }px,` +
+          ` #00D0F0 ${scale * sunrise_minutes}px,#00D0F0 ${
+            scale * sunset_minutes
+          }px, #1F0E4E ${scale * civil_twilight_end_minutes}px)`,
       }}
     />
     /* eslint-enable camelcase */

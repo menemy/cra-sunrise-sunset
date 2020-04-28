@@ -61,7 +61,7 @@ export function Bar({ data, prevData, animateMs }) {
   }, [data, prevData])
 
   // Scale for mobile
-  const scale = Math.min((window.screen.width - 60) / 1440, 1)
+  const scale = Math.min((Math.min(window.screen.width, window.innerWidth) - 60) / 1440, 1)
   return (
     /* eslint-disable camelcase */
     <div
